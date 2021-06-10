@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+}
+
+.bg img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: left center;
+}
+
+.top {
+  width: 100%;
+  height: 10vh;
+}
+
+.top h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5em;
+  font-weight: 400;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Stint Ultra Condensed', cursive;
+}
+
+.today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.today .font {
+  padding: 30px 0px;
+}
+
+.today .font h4 {
+  font-size: 2rem;
+}
+
+.today .food-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.today .food-items .food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  margin: 0px 40px;
+  border: 1px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.today .food-items .food .food-img {
+  width: 300px;
+  height: 250px;
+}
+
+.today .food-items .food .food-img img {
+  width: 400px;
+  height: 100%;
+  border-radius: 60px;
+}
+
+.today .food-items .food .food-text {
+  position: relative;
+  width: 40%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.today .food-items .food .food-text h5 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.today .food-items .food .food-text .ingredient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px;
+  margin-left: 30px;
+}
+
+.today .food-items .food .food-text .ingredient p {
+  top: 20.8%;
+  left: 10%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.today .food-items .food .food-text .ingredient span {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
+  padding-left: 70px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  letter-spacing: 2px;
+  width: 350px;
+}
+
+.keyword-items {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.keyword-items .keyword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 30px;
+}
+
+.keyword-items .keyword span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 130px;
+  height: 50px;
+  margin: 0px 30px;
+  border-radius: 80px;
+  background-color: #a2d2ff;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.keyword-items .keyword span:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 10px 5px #97B1BF;
+          box-shadow: 0px 2px 10px 5px #97B1BF;
+  color: #000;
+}
+
+.keyword-items .keyword span:active {
+  margin: 0;
+}
+
+.click-show {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.click-show .food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  margin: 0px 50px;
+  border: 1px solid black;
+  border-radius: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 80px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: #fff;
+}
+
+.click-show .food .food-img {
+  width: 250px;
+  height: 250px;
+}
+
+.click-show .food .food-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+}
+
+.click-show .food .food-text {
+  position: relative;
+  width: 40%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.click-show .food .food-text h5 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.click-show .food .food-text .ingredient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px;
+}
+
+.click-show .food .food-text .ingredient p {
+  position: absolute;
+  top: 14%;
+  left: -15%;
+  font-size: 1.3rem;
+}
+
+.click-show .food .food-text .ingredient span {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 550;
+}
+
+.keyword-items .keyword span.active {
+  background: #88d4ab;
+  width: 150px;
+  height: 60px;
+}
+/*# sourceMappingURL=cook.css.map */
